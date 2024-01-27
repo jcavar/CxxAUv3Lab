@@ -32,12 +32,13 @@
 		8919726E2A3061A100AA7041 /* CxxLabExtensionDSPKernel.hpp in Resources */ = {isa = PBXBuildFile; fileRef = 8919726D2A3061A100AA7041 /* CxxLabExtensionDSPKernel.hpp */; };
 		891972712A3061A100AA7041 /* CxxLabExtensionMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891972702A3061A100AA7041 /* CxxLabExtensionMainView.swift */; };
 		891972732A3061A100AA7041 /* ParameterSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891972722A3061A100AA7041 /* ParameterSlider.swift */; };
-		891972782A3061A100AA7041 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891972762A3061A100AA7041 /* MainInterface.storyboard */; };
+		891972782A3061A100AA7041 /* AudioUnitViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891972762A3061A100AA7041 /* AudioUnitViewController.storyboard */; platformFilters = (ios, maccatalyst, ); };
 		8919727A2A3061A100AA7041 /* ObservableAUParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 891972792A3061A100AA7041 /* ObservableAUParameter.swift */; };
 		8919727C2A3061A100AA7041 /* AudioUnitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919727B2A3061A100AA7041 /* AudioUnitViewController.swift */; };
 		8919728E2A30797D00AA7041 /* CxxLabAudioUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8919728D2A30797D00AA7041 /* CxxLabAudioUnit.swift */; };
 		891972912A307CF000AA7041 /* CxxLabExtensionParameterAddresses.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 891972682A3061A100AA7041 /* CxxLabExtensionParameterAddresses.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		8932BC4E2A308C4900E1396F /* CxxLabExtensionAUProcessHelper.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 891972652A3061A100AA7041 /* CxxLabExtensionAUProcessHelper.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA6A2A592B4D7433001B2D24 /* AudioUnitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA6A2A572B4D7433001B2D24 /* AudioUnitViewController.xib */; platformFilters = (macos, ); };
 		FAD737792B4EBEE40028B623 /* CxxLabExtensionAUProcessHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = FAD737782B4EBEE40028B623 /* CxxLabExtensionAUProcessHelper.mm */; };
 /* End PBXBuildFile section */
 
@@ -112,12 +113,13 @@
 		8919726D2A3061A100AA7041 /* CxxLabExtensionDSPKernel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CxxLabExtensionDSPKernel.hpp; sourceTree = "<group>"; };
 		891972702A3061A100AA7041 /* CxxLabExtensionMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CxxLabExtensionMainView.swift; sourceTree = "<group>"; };
 		891972722A3061A100AA7041 /* ParameterSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParameterSlider.swift; sourceTree = "<group>"; };
-		891972772A3061A100AA7041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		891972772A3061A100AA7041 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = AudioUnitViewController.storyboard; sourceTree = "<group>"; };
 		891972792A3061A100AA7041 /* ObservableAUParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableAUParameter.swift; sourceTree = "<group>"; };
 		8919727B2A3061A100AA7041 /* AudioUnitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioUnitViewController.swift; sourceTree = "<group>"; };
 		8919727D2A3061A100AA7041 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8919728D2A30797D00AA7041 /* CxxLabAudioUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CxxLabAudioUnit.swift; sourceTree = "<group>"; };
 		89C60C792A31FA530090CADC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FA6A2A582B4D7433001B2D24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = AudioUnitViewController.xib; sourceTree = "<group>"; };
 		FAD737782B4EBEE40028B623 /* CxxLabExtensionAUProcessHelper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CxxLabExtensionAUProcessHelper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -359,6 +361,7 @@
 		891972742A3061A100AA7041 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FA6A2A532B4C9C90001B2D24 /* macOS */,
 				891972792A3061A100AA7041 /* ObservableAUParameter.swift */,
 				8919727B2A3061A100AA7041 /* AudioUnitViewController.swift */,
 				891972752A3061A100AA7041 /* Base.lproj */,
@@ -369,7 +372,23 @@
 		891972752A3061A100AA7041 /* Base.lproj */ = {
 			isa = PBXGroup;
 			children = (
-				891972762A3061A100AA7041 /* MainInterface.storyboard */,
+				891972762A3061A100AA7041 /* AudioUnitViewController.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		FA6A2A532B4C9C90001B2D24 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A2A562B4D7433001B2D24 /* Base.lproj */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		FA6A2A562B4D7433001B2D24 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FA6A2A572B4D7433001B2D24 /* AudioUnitViewController.xib */,
 			);
 			path = Base.lproj;
 			sourceTree = "<group>";
@@ -539,7 +558,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				891972662A3061A100AA7041 /* CxxLabExtensionAUProcessHelper.hpp in Resources */,
-				891972782A3061A100AA7041 /* MainInterface.storyboard in Resources */,
+				FA6A2A592B4D7433001B2D24 /* AudioUnitViewController.xib in Resources */,
+				891972782A3061A100AA7041 /* AudioUnitViewController.storyboard in Resources */,
 				8919726E2A3061A100AA7041 /* CxxLabExtensionDSPKernel.hpp in Resources */,
 				891972552A3061A100AA7041 /* README.md in Resources */,
 			);
@@ -619,12 +639,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		891972762A3061A100AA7041 /* MainInterface.storyboard */ = {
+		891972762A3061A100AA7041 /* AudioUnitViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				891972772A3061A100AA7041 /* Base */,
 			);
-			name = MainInterface.storyboard;
+			name = AudioUnitViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		FA6A2A572B4D7433001B2D24 /* AudioUnitViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6A2A582B4D7433001B2D24 /* Base */,
+			);
+			name = AudioUnitViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -666,6 +694,7 @@
 				CODE_SIGN_ENTITLEMENTS = CxxLab/CxxLab.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -732,6 +761,7 @@
 				CODE_SIGN_ENTITLEMENTS = CxxLab/CxxLab.entitlements;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -763,6 +793,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VYM86U7R93;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CxxLabExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CxxLabExtension;
@@ -776,7 +807,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.CxxLab.CxxLabExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -794,6 +825,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VYM86U7R93;
+				"ENABLE_HARDENED_RUNTIME[sdk=macosx*]" = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CxxLabExtension/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = CxxLabExtension;
@@ -807,7 +839,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.CxxLab.CxxLabExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -838,10 +870,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.CxxLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -867,14 +900,16 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikolozi.CxxLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = YES;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
